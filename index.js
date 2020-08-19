@@ -25,6 +25,6 @@ let currentLine = katzDeliLine => {
     for (let i = 0; i < katzDeliLine.length; i += 1) {
       let array = [];
       array.push `${++i}. ${katzDeliLine[--i]},`
-    }
+    } return array
   }
 }
