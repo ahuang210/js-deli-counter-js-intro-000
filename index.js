@@ -26,3 +26,4 @@ let currentLine = katzDeliLine => {
       return `The line is currently: ${i + 1}. ${katzDeliLine[i]}`
     }
   }
+}
