@@ -19,9 +19,10 @@ let nowServing = katzDeliLine => {
 }
 
 let currentLine = katzDeliLine => {
-  while (katzDeliLine.length > 0) {
-    let i = 0;
-    console.log (`The line is currently: ${i + 1}. ${katzDeliLine[i]}`);
-    i += 1
-  } return "The line is currently empty."
-}
+  for (let i = 0; i < katzDeliLine.length; i += 1) {
+    if (katzDeliLine.length < 0) {
+      return "The line is currently empty";
+    } else {
+      return `The line is currently: ${i + 1}. ${katzDeliLine[i]}`
+    }
+  }
