@@ -23,6 +23,7 @@ let currentLine = katzDeliLine => {
     return "The line is currently empty."
   } else {
     for (let i = 0; i < katzDeliLine.length; i += 1) {
+      let array = [];
       array.push `${++i}. ${katzDeliLine[--i]},`
     }
   }
