@@ -22,9 +22,10 @@ let currentLine = katzDeliLine => {
   if (katzDeliLine.length === 0) {
     return "The line is currently empty."
   } else {
-    console.log("The line is currently: ")
+    return console.log("The line is currently: ") + {
     for (let i = 0; i < katzDeliLine.length; i += 1) {
       console.log (`${++i}. ${katzDeliLine[--i]},`)
     }
+  }
   }
 }
